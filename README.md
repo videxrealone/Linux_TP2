@@ -75,7 +75,10 @@ Pour notre cas, j'ai choisit de créer un nouveau  répertoire à la place d'uti
 
 ![image](https://user-images.githubusercontent.com/91763346/195919992-e5de2016-aaf5-48bd-abe9-73ffa6438d46.png)
 
-on utilise la commande `` cp /etc/passwd . ``
+on utilise la commande 
+``` 
+cp /etc/passwd . 
+```
 
 * **Question 4:**  Dupliquez passwd sous votre répertoire de connexion, sous le nom password.
 
@@ -98,10 +101,10 @@ On ne peut pas effacer le répertoire tp car il contient des fichiers. on peut u
 
 * **Question 8:**  Déplacez group et hotes vers TMP.
 
-``
+```
   >$ mv hotes ./tmp
   >$ mv group ./tmp
-``
+```
 
 * **Question 9:**  Détruisez le répertoire tp.
 
@@ -123,9 +126,10 @@ Pour pouvoir détruire le répertoire tp, on a déplacer son contenu vers tmp.
 
 ![image](https://user-images.githubusercontent.com/91763346/195922886-a9db200d-be68-4324-8664-9c82305c5651.png)
 
+```
  . >$ ls -l tmp affiche les détails sur le contenu du /tmp.
  . >$ ls -ld tmp affiche les détails sur /tmp.
-
+```
 * **Question 13:**  Donnez la date de dernière modification du répertoire tmp.
 
 ![image](https://user-images.githubusercontent.com/91763346/195923285-7612b027-178d-4b67-8e6f-f0efc3dbac02.png)
@@ -148,7 +152,7 @@ Pour pouvoir détruire le répertoire tp, on a déplacer son contenu vers tmp.
 
 * **Question 2:**   Voir la page de manuel de touch. À quoi sert ce programme, si ce n’est à créer des fichiers vides ? À quoi sert l’option -c ? La tester.
 
-``
+```
 Update the access and modification times of each FILE to the
        current time.
 
@@ -160,7 +164,7 @@ Update the access and modification times of each FILE to the
 
        Mandatory arguments to long options are mandatory for short
        options too.
-``
+```
 
 l'argument -c nous aide a ne pas créer un fichier si on utilise touch, mais juste de mettre a jour le timestamp.
 
@@ -170,16 +174,10 @@ l'argument -c nous aide a ne pas créer un fichier si on utilise touch, mais jus
 
 * **Question 4:**   Voir la page de manuel de touch. À quoi sert ce programme, si ce n’est à créer des fichiers vides ? À quoi sert l’option -c ? La tester.
 
-``
-DESCRIPTION         top
-       man is the system's manual pager.  Each page argument given to
-       man is normally the name of a program, utility or function.  The
-       manual page associated with each of these arguments is then found
-       and displayed.  A section, if provided, will direct man to look
-       only in that section of the manual.  The default action is to
-       search in all of the available sections following a pre-defined
-       order (see DEFAULTS), and to show only the first page found, even
-       if page exists in several sections.
+```
+DESCRIPTION        
+       man is the system's manual pager.  Each page argument given to man is normally the name of a program, utility or function.  The manual page associated with each of these arguments is then found and displayed.  A section, if provided, will direct man to look only in that section of the manual.  The default action is to
+       search in all of the available sections following a pre-defined order (see DEFAULTS), and to show only the first page found, even if page exists in several sections.
 
        The table below shows the section numbers of the manual followed
        by the types of pages they contain.
@@ -196,7 +194,7 @@ DESCRIPTION         top
        9   Kernel routines [Non standard]
 
        A manual page consists of several sections.
-``
+```
 ![image](https://user-images.githubusercontent.com/91763346/195925969-7d610eb0-2a2f-48ac-bbf3-3a932609f935.png)
 
 ![image](https://user-images.githubusercontent.com/91763346/195926032-cd66ec2b-2d18-4338-b1f5-1ef04c973456.png)
